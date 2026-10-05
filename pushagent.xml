@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="system" method="upgrade">
+	<name>plg_system_pushagent</name>
+	<author>Push Agent</author>
+	<creationDate>2026-09</creationDate>
+	<copyright>(C) 2026 Push Agent. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>support@pushagent.net</authorEmail>
+	<authorUrl>https://pushagent.net</authorUrl>
+	<version>2.0.1</version>
+	<description>PLG_SYSTEM_PUSHAGENT_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="pushagent">pushagent.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_pushagent.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_pushagent.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="token" type="text"
+					label="PLG_SYSTEM_PUSHAGENT_TOKEN_LABEL"
+					description="PLG_SYSTEM_PUSHAGENT_TOKEN_DESC"
+					hint="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+					filter="string" size="50" class="input-xxlarge" default="" />
+				<field name="delay" type="number"
+					label="PLG_SYSTEM_PUSHAGENT_DELAY_LABEL"
+					description="PLG_SYSTEM_PUSHAGENT_DELAY_DESC"
+					default="3" min="0" max="120" step="1" filter="integer" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="app_url" type="url"
+					label="PLG_SYSTEM_PUSHAGENT_APPURL_LABEL"
+					description="PLG_SYSTEM_PUSHAGENT_APPURL_DESC"
+					default="https://app.pushagent.net/" filter="url" />
+				<field name="create_sw" type="radio"
+					label="PLG_SYSTEM_PUSHAGENT_CREATESW_LABEL"
+					description="PLG_SYSTEM_PUSHAGENT_CREATESW_DESC"
+					class="btn-group btn-group-yesno" default="1" filter="integer">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
