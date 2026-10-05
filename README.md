@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://pushagent.net"><img src="https://pushagent.net/wp-content/themes/pushagent/assets/img/logo.png" alt="Push Agent" width="260"></a>
+  <img src=".screens/joomla-banner.jpg" alt="Push Agent: web push notifications for Joomla and RSS feeds updates" width="100%">
 </p>
 
 # Push Agent for Joomla
